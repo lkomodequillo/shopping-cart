@@ -28,4 +28,4 @@ A React-based shopping cart application with features like product listing, filt
     - **usehooks-ts**
 
 ## Screenshot
-![Shopping Cart Screenshot](/assets/image.png)
+![Shopping Cart Screenshot](src\assets\image.png)
