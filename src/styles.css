@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+h2, h4, h5 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+button {
+  border-radius: 8px;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+/* 3D Button Styles */
+.button-3d {
+  background: linear-gradient(145deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.button-3d-secondary {
+  background: linear-gradient(145deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.button-3d-danger {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+  border: none;
+  color: white;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* 3D Form Input */
+.input-3d {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.input-3d:focus {
+  border-color: #feb47b;
+  box-shadow: 0 0 8px rgba(255, 106, 47, 0.7);
+  outline: none;
+}
+
+/* Header */
+.cart-title, .checkout-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+.total-amount, .total-payment {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Cart Table Styles */
+.cart-table, .checkout-table {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cart-table th, .checkout-table th {
+  background-color: #f9f9f9;
+  text-align: left;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-table td, .checkout-table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cart-image, .checkout-image {
+  width: 50px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.total-amount {
+  color: #333;
+  font-weight: bold;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header, .modal-footer {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #444;
+}
+
+.modal-footer .button-3d {
+  background: linear-gradient(145deg, #00c6ff, #0072ff);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-table, .checkout-table {
+    font-size: 0.9rem;
+  }
+
+  .cart-title, .checkout-title {
+    font-size: 1.5rem;
+  }
+  
+  .button-3d, .button-3d-secondary, .button-3d-danger {
+    width: 100%;
+  }
+
+  .checkout-image, .cart-image {
+    width: 40px;
+  }
+}
